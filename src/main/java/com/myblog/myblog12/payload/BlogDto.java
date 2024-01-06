@@ -1,19 +1,14 @@
-package com.myblog.myblog12.entity;
+package com.myblog.myblog12.payload;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name="myblogs")
-@Data
-public class Blog {
+public class BlogDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private long id;
 
@@ -24,5 +19,4 @@ public class Blog {
     private long mobile;
 
     private String content;
-
 }
